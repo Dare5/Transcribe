@@ -1,0 +1,29 @@
+body{
+  background-color: #cae3f8;
+  font-family: Arial;
+}
+
+.site-greetings{
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.subtitle{
+  text-align: center;
+  font-size: 18px;
+  color: rgb(138, 136, 136);
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.main-body{
+ width: 1200px;
+ background-color: white;
+ min-height: 800px;
+ border-radius: 15px;
+ margin: 40px auto;
+ 
+}
+
