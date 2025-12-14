@@ -37,7 +37,7 @@ body{
   margin-left: 20px;
 }
 
-.video-icon{
+.transcribe-btn{
   height: 120px;
   width: 220px;
   margin-left: 20px;
@@ -55,7 +55,19 @@ body{
   gap: 15px;
   padding-top: 20px;
   flex: 1 ;
+  transition: transform 0.15s ease; box-shadow: 0.15 ease;
   
+}
+
+.transcribe-btn:hover{
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.transcribe-btn.selected{
+  border-color: rgb(103, 181, 233);
+  background-color: #cae3f8;
+  color: #3977eb;
 }
 
 .icon-img{
@@ -63,21 +75,23 @@ body{
   height: auto;
 }
 
-.doc-img{
-  width: 40px;
-  height: auto;
+.transcribe-btn.selected .icon-img {
+  filter: brightness(0) saturate(100%)
+   invert(32%) sepia(92%) saturate(3500%)
+   hue-rotate(210deg) brightness(95%) contrast(95%);
 }
 
-.text-img{
-  width: 40px;
-  height: auto;
-}
 
 .icon-text {
   font-size: 14px;
   color: black;
   text-align: center;
   
+}
+
+
+.transcribe-btn.selected .icon-text{
+  color: blue;
 }
 
 .button-row{
