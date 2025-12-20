@@ -1,13 +1,16 @@
 body{
   background-color: #cae3f8;
   font-family: Arial;
+  font-size: 14px;
+  color: rgb(26, 25, 25);
 }
 
 .site-greetings{
   text-align: center;
   margin-top: 50px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 50px;
+  
 }
 
 .subtitle{
@@ -27,23 +30,25 @@ body{
   margin: 40px auto;
   display: flex;
   flex-direction: column;
+  padding: 24px;
  
 }
 
 .Ttype {
   color: rgb(61, 60, 60);
-  font-size: 16px;
-  margin-top: 30px;
-  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.button-row{
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
 }
 
 .transcribe-btn{
   height: 120px;
   width: 220px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 7px;
   border-color: rgb(230, 229, 229);
   border-style: solid;
   background-color: white;
@@ -52,7 +57,7 @@ body{
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
-  gap: 15px;
+  gap: 18px;
   padding-top: 20px;
   flex: 1 ;
   transition: transform 0.15s ease; box-shadow: 0.15 ease;
@@ -99,3 +104,61 @@ body{
   justify-content: space-between;
  
 }
+
+.selection-box{
+  display: flex;
+  height: 220px;
+  background-color: rgb(243, 233, 234);
+  margin-top: 25px;
+  border-radius: 7px;
+  border-width: 2px;
+  border-color: rgb(212, 208, 208);
+  border-style: solid;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.glbe-img{
+  height: 20px;
+}
+
+.box-title{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  
+}
+
+.Language-row{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selection-box{
+  color: rgb(66, 65, 65);
+  font-size: 14px;
+  
+}
+
+.Language-select{
+  height: 50px;
+  width: auto;
+  border-radius: 7px;
+  font-size: 17px;
+  border-width: 2px;
+  border-color: rgb(212, 208, 208);
+  
+}
+
+.upload-box{
+  height: 220px;
+  width: auto;
+  border-style: dashed;
+  border-color: rgb(212, 208, 208);
+  border-width: 2px;
+  border-radius: 7px;
+}
+
