@@ -14,27 +14,27 @@
 
     <div class="main-body">
       <div class="Ttype">
-        Select Transcription Type
+         Transcription Type
       </div>
       
 
       <div class="button-row">
-        <button class="transcribe-btn">
+        <button class="transcribe-btn" data-type="video">
           <img src="icons/video icon.png" class="icon-img">
           <span class="icon-text">Video</span>
         </button>
 
-        <button class="transcribe-btn">
+        <button class="transcribe-btn" data-type="audio">
           <img src="icons/audio.png" class="icon-img">
           <span class="icon-text">Audio</span>
         </button>
 
-        <button class="transcribe-btn">
+        <button class="transcribe-btn" data-type="document">
           <img src="icons/document-icon.png" class="icon-img">
           <span class="icon-text">Document</span>
         </button>
 
-        <button class="transcribe-btn">
+        <button class="transcribe-btn" data-type="text">
           <img src="icons/text-icon.png" class="icon-img">
           <span class="icon-text">Text</span>
         </button>
@@ -68,11 +68,64 @@
 
       </div>
 
-      <p class="File-upload">Upload File</p>
+      <p class="File-upload">Upload Section</p>
 
       <div class="upload-box">
 
+        <div id="upload-placeholder">
+          Select transcription type....
+        </div>
+
+        <div id="video-content"   class="upload-content">
+
+          <input type="text" id="video-url" placeholder="Paste YouTube or video link">
+
+          <input type="file" id="video-file" accept="video/*" style="display: none;">
+          
+          <a href="#" class="upload-link" data-target="video-file">Browse video</a>
+
+          <p class="upload-info">MP4, MP3, WAV, or other video formats</p>  
+
+        </div>
+
+
+        <div id="audio-content"   class="upload-content">
+
+          <input type="text" id="audio-url" placeholder="Paste audio link">
+
+          <input type="file" id="audio-file" accept="audio/*" style="display: none;">
+          
+          <a href="#" class="upload-link" data-target="audio-file">Browse audio</a>
+
+          <p class="upload-info">MP3, WAV, M4A , FLAC or other audio formats</p>  
+
+        </div>
+
+        <div id="document-content"   class="upload-content">
+
+          <input type="file" id="document-file" accept=".pdf, .doc, .docx, .txt" style="display: none;">
+          
+          <a href="#" class="upload-link" data-target="document-file">Browse document</a>
+
+          <p class="upload-info">PDF, DOC, or DOCX files</p>  
+
+        </div>
+
+         
       </div>
+
+      <div id="text-content" style="display: none;">
+        <textarea class="text-box"
+          id="text-input"
+          placeholder="Paste text or transcript here..."
+          rows="6"
+          
+        ></textarea>
+      </div>
+
+ 
+
+     
           
         
 
@@ -80,6 +133,8 @@
     </div>
 
     
-      <script src="script.js"></script>
+    <script src="script.js"></script>
+      
   </body>
+ 
 </html>
