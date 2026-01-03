@@ -230,6 +230,52 @@ body{
   margin-top: 40px;
 }
 
+.file-icon{
+  font-size: 20px;
+}
+
+.file-name{
+  font-weight: bold;
+}
+
+.file-size{
+  color: #777;
+  font-size: 12px;
+}
+
+#transcribe-bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  background: white;
+  border-style: solid;
+  border-top: 1px;
+  
+  
+}
+
+#transcribe-btn{
+  width:  300px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  background-color: #3977eb;
+  border-style: solid;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#transcribe-btn:hover {
+  background-color: #2760ca;
+  transform: scale(1.05);
+}
+
 
 
 

@@ -80,11 +80,19 @@
 
           <input type="text" id="video-url" placeholder="Paste YouTube or video link">
 
-          <input type="file" id="video-file" accept="video/*" style="display: none;">
+          <input type="file" id="video-file" 
+          data-type="video"
+          class="file-input" accept="video/*" style="display: none;">
           
           <a href="#" class="upload-link" data-target="video-file">Browse video</a>
 
-          <p class="upload-info">MP4, MP3, WAV, or other video formats</p>  
+          <p class="upload-info">MP4, MP3, WAV, or other video formats</p> 
+          
+          <div class="file-preview" hidden>
+            <span class="file-icon">📄</span>
+            <span class="file-name"></span>
+            <span class="file-size"></span>
+          </div>
 
         </div>
 
@@ -93,21 +101,38 @@
 
           <input type="text" id="audio-url" placeholder="Paste audio link">
 
-          <input type="file" id="audio-file" accept="audio/*" style="display: none;">
+          <input type="file" id="audio-file" data-type="audio"
+          class="file-input" accept="audio/*,Video/*" style="display: none;">
           
           <a href="#" class="upload-link" data-target="audio-file">Browse audio</a>
 
           <p class="upload-info">MP3, WAV, M4A , FLAC or other audio formats</p>  
 
+          <div class="file-preview" hidden>
+            <span class="file-icon">🎶</span>
+            <span class="file-name"></span>
+            <span class="file-size"></span>
+          </div>
+
+
         </div>
 
         <div id="document-content"   class="upload-content">
 
-          <input type="file" id="document-file" accept=".pdf, .doc, .docx, .txt" style="display: none;">
+          <input type="file" id="document-file"
+          data-type="document"
+          class="file-input" accept=".pdf, .doc, .docx, .txt" style="display: none;">
           
           <a href="#" class="upload-link" data-target="document-file">Browse document</a>
 
           <p class="upload-info">PDF, DOC, or DOCX files</p>  
+
+          <div class="file-preview" hidden>
+            <span class="file-icon">📄</span>
+            <span class="file-name"></span>
+            <span class="file-size"></span>
+          </div>
+
 
         </div>
 
@@ -127,10 +152,17 @@
 
      
           
-        
+     
+    </div>
+
+     <div id="transcribe-bar" hidden  >
+        <button id = "transcribe-btn" >Transcribe</button>
+     </div>
 
       
-    </div>
+   
+
+    
 
     
     <script src="script.js"></script>
